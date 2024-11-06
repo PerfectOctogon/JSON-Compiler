@@ -1,0 +1,7 @@
+- Node: StartOfParseTree
+  - Node: dict
+    - Leaf: {
+    - Leaf: STRING
+    - Leaf: :
+    - Leaf: STRING
+    - Leaf: }
