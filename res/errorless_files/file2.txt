@@ -1,0 +1,37 @@
+{
+  "user": {
+    "id": 101,
+    "username": "sampleUser",
+    "email": "user@example.com",
+    "verified": true
+  },
+  "profile": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "age": 28,
+    "height": 175.5,
+    "weight": 70.0,
+    "isMember": false
+  },
+  "preferences": {
+    "notificationsEnabled": true,
+    "darkMode": false,
+    "language": "English"
+  },
+  "stats": {
+    "loginAttempts": 5,
+    "points": 1200,
+    "completedTasks": [10, 20, 30]
+  },
+  "friends": [
+    {
+      "id": 102,
+      "username": "friend1"
+    },
+    {
+      "id": 103,
+      "username": "friend2"
+    }
+  ],
+  "notes": null
+}

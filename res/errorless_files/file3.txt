@@ -1,0 +1,36 @@
+{
+  "product": {
+    "productId": 2024,
+    "productName": "Eco-friendly Water Bottle",
+    "price": 19.99,
+    "inStock": true,
+    "dimensions": {
+      "height": 25.0,
+      "width": 7.5,
+      "depth": 7.5
+    },
+    "tags": ["eco-friendly", "reusable", "BPA-free"]
+  },
+  "seller": {
+    "sellerId": 501,
+    "sellerName": "GreenGoods",
+    "rating": 4.6,
+    "isVerified": true
+  },
+  "reviews": [
+    {
+      "reviewId": 1001,
+      "reviewer": "Jane Doe",
+      "rating": 5,
+      "comment": "Great quality and environmentally friendly!"
+    },
+    {
+      "reviewId": 1002,
+      "reviewer": "John Smith",
+      "rating": 4,
+      "comment": "Good bottle, but a bit pricey."
+    }
+  ],
+  "availableColors": ["blue", "green", "black"],
+  "relatedProducts": null
+}

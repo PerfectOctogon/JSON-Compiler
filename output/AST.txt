@@ -1,0 +1,23 @@
+- dict
+  - name : Alice
+  - age : 30
+  - isActive : isActive
+  - balance : 123.45
+  - description : A sample JSON object with no errors.
+  - address
+    - street : 123 Maple St
+    - city : Wonderland
+    - postalCode : W1234
+  - hobbies
+    - reading
+    - coding
+    - hiking
+  - scores
+    - 85
+    - 90
+    - 78
+    - 92
+  - additionalInfo : additionalInfo
+  - nestedObject
+    - isVerified : isVerified
+    - rating : 4.8

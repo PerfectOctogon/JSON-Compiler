@@ -1,7 +1,80 @@
-- Node: StartOfParseTree
+- Node: dict
+  - Leaf: {
+  - Leaf: name
+  - Leaf: :
+  - Leaf: Alice
+  - Leaf: ,
+  - Leaf: age
+  - Leaf: :
+  - Leaf: 30
+  - Leaf: ,
+  - Leaf: isActive
+  - Leaf: :
+  - Leaf: TRUE
+  - Leaf: ,
+  - Leaf: balance
+  - Leaf: :
+  - Leaf: 123.45
+  - Leaf: ,
+  - Leaf: description
+  - Leaf: :
+  - Leaf: A sample JSON object with no errors.
+  - Leaf: ,
+  - Leaf: address
+  - Leaf: :
   - Node: dict
     - Leaf: {
-    - Leaf: STRING
+    - Leaf: street
     - Leaf: :
-    - Leaf: STRING
+    - Leaf: 123 Maple St
+    - Leaf: ,
+    - Leaf: city
+    - Leaf: :
+    - Leaf: Wonderland
+    - Leaf: ,
+    - Leaf: postalCode
+    - Leaf: :
+    - Leaf: W1234
     - Leaf: }
+  - Leaf: ,
+  - Leaf: hobbies
+  - Leaf: :
+  - Node: list
+    - Leaf: [
+    - Leaf: reading
+    - Leaf: ,
+    - Leaf: coding
+    - Leaf: ,
+    - Leaf: hiking
+    - Leaf: ]
+  - Leaf: ,
+  - Leaf: scores
+  - Leaf: :
+  - Node: list
+    - Leaf: [
+    - Leaf: 85
+    - Leaf: ,
+    - Leaf: 90
+    - Leaf: ,
+    - Leaf: 78
+    - Leaf: ,
+    - Leaf: 92
+    - Leaf: ]
+  - Leaf: ,
+  - Leaf: additionalInfo
+  - Leaf: :
+  - Leaf: NULL
+  - Leaf: ,
+  - Leaf: nestedObject
+  - Leaf: :
+  - Node: dict
+    - Leaf: {
+    - Leaf: isVerified
+    - Leaf: :
+    - Leaf: FALSE
+    - Leaf: ,
+    - Leaf: rating
+    - Leaf: :
+    - Leaf: 4.8
+    - Leaf: }
+  - Leaf: }

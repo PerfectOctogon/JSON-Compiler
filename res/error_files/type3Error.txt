@@ -1,0 +1,10 @@
+{
+  "valid_number": 123,
+  "invalid_number_1": 0123,
+  "invalid_number_2": +12.0,
+  "another_valid_number": 45.67,
+  "nested_object": {
+    "nested_invalid_number": 012.34,
+    "nested_another_invalid_number": +0.56
+  }
+}

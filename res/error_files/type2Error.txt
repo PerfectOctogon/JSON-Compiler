@@ -1,0 +1,11 @@
+{
+  "valid_key": "This is valid",
+  "": "Empty key",
+  " ": "Single space key",
+  "     ": "Multiple spaces key",
+  "another_valid_key": "Another valid entry",
+  "nested_object": {
+    "": "Empty key in nested object",
+    "    ": "Multiple spaces key in nested object"
+  }
+}

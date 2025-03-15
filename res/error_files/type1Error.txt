@@ -1,0 +1,9 @@
+{
+  "valid_number": 1.5,
+  "invalid_decimal_1": 1.,
+  "valid_string": "test",
+  "valid_object": {
+    "nested_invalid_decimal": 50.,
+    "nested_valid_number": 2.75
+  }
+}

@@ -70,7 +70,7 @@ class DFA:
                     self.token_types.append("STRING")
                     state = "STRING"
                     current_token = ""
-                elif char.isdigit() or char == '-':
+                elif char.isdigit() or char in ".eE+-":
                     self.token_types.append("NUMBER")
                     state = "NUMBER"
                     current_token = char
@@ -87,7 +87,7 @@ class DFA:
             elif state == "STRING":
                 # String reading state
                 if char == '"':
-                    self.tokens.append(f'STRING:{current_token}')
+                    self.tokens.append(current_token)
                     state = "S0"
                 elif char == '\\':
                     # Handle escaped characters like \"
@@ -107,7 +107,7 @@ class DFA:
                     # Validate if the number is in a proper format
                     try:
                         float(current_token)  # Validate the number
-                        self.tokens.append(f'NUMBER:{current_token}')
+                        self.tokens.append(current_token)
                     except ValueError:
                         raise ValueError(f"Invalid number at position {i}: {current_token}")
                     state = "S0"
@@ -118,7 +118,7 @@ class DFA:
                 current_token += char
                 if current_token in {"true", "false", "null"}:
                     if current_token == "true" or current_token == "false":
-                        self.tokens.append(f'BOOL:{current_token.upper()}')
+                        self.tokens.append(current_token.upper())
                     else:
                         self.tokens.append("NULL")
                     state = "S0"
@@ -131,7 +131,7 @@ class DFA:
         if state == "NUMBER":
             try:
                 float(current_token)
-                self.tokens.append(f'NUMBER:{current_token}')
+                self.tokens.append(current_token)
             except ValueError:
                 raise ValueError(f"Invalid number at end of input: {current_token}")
         elif state == "STRING":

@@ -25,7 +25,10 @@ parse_tree = ParseTree.ParseTree(dfa)
 
 print(parse_tree.parse())
 
-parse_tree.parent_node.pre_order_traversal_print()
+# parse_tree.parent_node.pre_order_traversal_print()
 
 with open("../output/parsetree.txt", 'w') as file:
     parse_tree.parent_node.pre_order_traversal_output(file=file)
+
+with open("../output/AST.txt", 'w') as file:
+    parse_tree.ast_parent_node.pre_order_traversal_output(file=file, annotate_nodes=False)

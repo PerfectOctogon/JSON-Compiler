@@ -1,0 +1,12 @@
+{
+  "true": "This key is a reserved word and may cause issues",
+  "false": "Another reserved word as a key",
+  "null": "Reserved word 'null' as a key",
+  "True": "This key is allowed, as it is not a reserved word in JSON",
+  "False": "Another allowed key",
+  "nested_object": {
+    "true": "Reserved word in nested object",
+    "null": "Another reserved word in nested object",
+    "some_valid_key": "This is valid"
+  }
+}
